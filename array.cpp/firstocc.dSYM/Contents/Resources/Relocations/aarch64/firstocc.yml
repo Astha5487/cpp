@@ -1,0 +1,8 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/asthajaiswal/astha.cpp/array.cpp/firstocc'
+relocations:
+  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: __Z8firstOccPiii, symObjAddr: 0x0, symBinAddr: 0x100003DB4, symSize: 0x134 }
+  - { offsetInCU: 0x2DDE, offset: 0x2DDE, size: 0x8, addend: 0x0, symName: __Z8firstOccPiii, symObjAddr: 0x0, symBinAddr: 0x100003DB4, symSize: 0x134 }
+  - { offsetInCU: 0x2E5E, offset: 0x2E5E, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x134, symBinAddr: 0x100003EE8, symSize: 0x8C }
+...
