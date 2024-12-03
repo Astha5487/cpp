@@ -8,7 +8,7 @@ bool isPresent(int arr[][4],int target, int row, int col){
                 return 1;
             }
         }
-    }
+    }4444
 
 
     return 0;
