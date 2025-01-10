@@ -1,6 +1,26 @@
 #include<iostream>
 using namespace std;
+class Node{
+    public:
+    int data;
+    Node* next;
+    // constructor
+    Node(int data){
+        this -> data = data;
+        this ->next = NULL;
+    }
 
+    //destructor 
+    ~Node(){
+        int value = this->data;
+        //memory freen
+        if(this->next != NULL){
+            delete next;
+            this ->next = NULL;
+        }
+        cout << " memory free for node with this data " << value << endl;
+    }
+};
 
 bool isCircularList(Node* head){
     //empty list
