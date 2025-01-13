@@ -8,6 +8,7 @@ class customer{
     string name;
     int account_num;
     int balance;
+    int *roi;
 
     public:
     // default constructor
@@ -16,6 +17,7 @@ class customer{
         name = "astha";
         account_num = 5;
         balance = 1000000;
+        roi = new int[100];
         // cout<< "customer is called " << endl;
     }
 
@@ -42,6 +44,19 @@ class customer{
    inline customer(string a, int b, int c): name(a), account_num(b), balance(c){
 
     }
+  // copy constructor
+    customer(customer &B){
+        name = B.name;
+        account_num = B.account_num;
+        balance = B.balance;
+    }
+/*   Destructor --->  it is an function that is going to be called before an object is destroyed... releases or free the memory allocation of dynamic input or closes the open file and  have no return type  ... reverses order happen in destructor  */
+/*  ~customer()
+{
+  delete data;
+  cout<< " destructor is called " << endl;
+}   */
+
 
 };
 
@@ -54,4 +69,9 @@ int main(){
     A1.display();
     A2.display();
     A3.display();
+    customer A4(A3);
+    A4.display();
+    customer A5;
+    A5 = A3;
+    A5.display();
 }
